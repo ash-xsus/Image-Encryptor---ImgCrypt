@@ -16,7 +16,7 @@ show_banner() {
     echo "║                                          ║"
     echo "║            ImgCrypt v1.0                 ║"
     echo "║      Secure Image Encryption Tool        ║"
-    echo "║                                -Ash      ║"
+    echo "║                                -S1r1us   ║"
     echo "║                                          ║"
     echo "╚══════════════════════════════════════════╝"
     echo -e "${NC}"
@@ -156,7 +156,7 @@ process_directory() {
     local file_list
     if [ "$operation" = "encrypt" ]; then
         file_list=$(find "$directory" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.bmp" -o -iname "*.gif" -o -iname "*.tiff" -o -iname "*.webp" \) 2>/dev/null)
-    else # decrypt
+    else 
         file_list=$(find "$directory" -maxdepth 1 -type f -iname "*.enc" 2>/dev/null)
     fi
     
@@ -312,6 +312,4 @@ main() {
         echo -e "${YELLOW}Some operations failed. Check the output above for details.${NC}"
     fi
 }
-
-# Call main function with all arguments
 main "$@"
