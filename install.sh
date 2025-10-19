@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Installation script for imgcrypt
-# Author: Ash
+# Author: S1r1us
 # Version: 1.0
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -14,7 +14,7 @@ echo "╔═══════════════════════�
 echo "║                                          ║"
 echo "║       ImgCrypt Installer v1.0            ║"
 echo "║      Secure Image Encryption Tool        ║"
-echo "║                                  -Ash    ║"
+echo "║                                -S1r1us   ║"
 echo "║                                          ║"
 echo "╚══════════════════════════════════════════╝"
 echo -e "${NC}"
